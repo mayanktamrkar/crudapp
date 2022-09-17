@@ -1,0 +1,81 @@
+<html>
+  <header>
+    
+    <link rel="stylesheet" href="css/hello.css" >
+    <p  style="font-size: 50px;color: red; text-align: center ;">STUDENT FEEDBACK SYSTEM </p>
+    <img src="images/sage1.jpg" height="500px" width="1400px ">
+    
+    <meta charset="UTF-8">
+
+  </header>
+  <style>   
+    Body {  
+      font-family: Calibri, Helvetica, sans-serif;  
+      
+    }  
+
+     /* form { 
+            
+            border: 3px solid #f1f1f1;   
+        }    */
+     input[type=text], input[type=password] {   
+            width: 420px;   
+            margin: 8px 0;  
+            padding: 2px 6px;   
+            display: inline-block;   
+            border: 1px solid rgb(178, 243, 178);   
+            box-sizing: border-box;   
+        }  
+
+         
+     .container {   
+            padding: 15px;   
+            background-color: lightblue;  
+        } 
+        .center {
+            margin: auto;
+            width: 900px;
+            height: 120px;
+            background-color: rgb(211, 236, 228);
+            border: 1px solid;
+            border-radius: 30px;
+            padding: 10px;
+          
+}   
+
+
+    input{
+      color: blue;
+      border-radius: 20px;
+      height: 30px;
+      width: 120px;
+    }
+       
+    </style>   
+    
+  <p style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 30px;color: #eb2424;" >Login Page</p>
+   
+
+    <form method="post" action="/check" class="center" >
+      <div id ="box" style="text-align: center;" >
+        <label style="margin: auto;text-align: center;width: 300px;" for="fname" >User_name</label><br>
+        <input type="text" id="user" name="user" ><br>
+        <label for="lname">User_password</label><br>
+        <input type="password" id="pass" name="pass" ><br><br>
+       
+        <input type="submit" value="Submit">
+         <form method="get" action ="/sign" ><input type="submit" value="Regsiter"></form>
+      </div>
+      </form> 
+
+
+
+
+
+     
+            
+
+    
+
+
+</html>

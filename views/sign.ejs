@@ -1,0 +1,55 @@
+<html>
+  <header>
+    <meta charset="UTF-8">
+    <style>
+      #form{
+        background-color:blanchedalmond;
+        text-align: center;
+        height: 400px;
+        margin-top: 50px;
+      }
+      .input{
+        width: 250px;
+        height: 30px;
+
+        border-radius: 20px;
+      }
+      #la{
+        margin-top: 50px;
+      }
+      #button{
+        width: 70px;
+        height: 30px;
+        background-color: azure;
+        border-radius: 30px;
+      }
+
+    </style>
+
+  </header>
+  <p style="text-align: center; font-size: 50px ;color: blue;">
+      Create user & password page  
+  </p>
+
+    <form id="form" method="post" action="/user"  >
+        <label id="la" for="fname">user</label><br>
+        <input class="input" type="text" id="user" name="user" ><br>
+        <label for="lname">pass</label><br>
+        <input class ="input" type="password" id="pass" name="pass" ><br><br>
+
+        <label for="lname">Enrollement No</label><br>
+        <input class ="input" type="text" id="en" name="en" ><br><br>
+
+        <label for="lname">Mobile No</label><br>
+        <input class ="input" type="text" id="en" name="mobileno" ><br><br>
+       
+        <label for="lname">Course & Branch </label><br>
+        <input class ="input" type="text" id="cb" name="cb" ><br><br>
+       
+        <input id="button" type="submit" value="Submit">
+      </form> 
+
+    
+
+
+</html>

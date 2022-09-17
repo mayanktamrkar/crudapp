@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <header>
+    
+    <meta charset="UTF-8">
+  </header>
+  <style>
+    table {
+      font-family: arial, sans-serif;
+    }
+
+    
+    td, th {
+      border: 1px solid #ca0f0f;
+      text-align: left;
+     
+      
+    }
+    
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+    #title{
+      width: 300px;
+    }
+    #feedback{
+      width: 1000px;
+    }
+    #t{
+      width: 300px;
+    }
+    #h{
+      width: 1000px;
+    }
+    </style>
+<body>
+
+<h2>Feedback & Suggestion</h2>
+<table>
+  <thead>
+    <tr>
+        <th id="t">Title</th>
+        <th id="h">Feedback & Suggestion</th>
+      
+        </tr>
+  </thead>
+  
+  <tbody>
+
+</table>
+
+
+<% data.forEach((item)=>{%>
+  <table border=1>
+ 
+      <tr>
+  
+
+      <td id="title"><%=item.title%></td>
+       <td id="feedback"><%=item.feedback%></td>
+       <td><form action="/delete" method="post">   <input type="radio"  name="title" value="<%= item.title %>"><input type="submit" value="Resolve"> </form> </td>
+
+  
+      </tr>
+  
+
+  
+        </tbody>
+  </table>
+ 
+ 
+
+
+
+  <%})  %>
+
+  <div style="text-align: center;background-color: bisque;border-radius: 20px;">
+    <form action="/data" method="post">
+      <input type="radio" id="age1" name="data" value="0">
+      <label for="age1">Logout</label><br>
+      
+      <input type="submit">
+  
+    </form>
+    <form action="/admin" method="post" ><input type="submit" value="Users"></form>
+   </div>
+
+
+
+
+</body>
+</html> 

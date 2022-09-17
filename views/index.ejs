@@ -1,30 +1,60 @@
-<!DOCTYPE html>
 <html>
-<body>
+  <header>
+    <style>
+      #form{
+        text-align: center;
+        background-color: bisque;
+        width: 1200px;
+        height: 400px;
+      }
+      #feedack{
+        width: 500px;
+        height: 200px;
+        border-radius: 20px;
+      }
+      #title{
+        width: 500px;
+        height: 50px;
+        border-radius: 20px;
 
-<h2>HTML Forms</h2>
+      }
 
-<form method="post" action="/">
-  <label for="fname">First name:</label><br>
-  <input type="text" id="name" name="name" value="John"><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="desc" name="desc" value="Doe"><br><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="city" name="city" value="Doe"><br><br>
-  <input type="submit" value="Submit">
-</form> 
+    </style>
+    
+    <meta charset="UTF-8">
+  </header>
 
-<p>data.</p>
+ 
+
+     <form id ="form"method="post" action="/">
+        <label for="fname">Title </label><br>
+        <input id="title" type="text" id="title" name="title" ><br>
+        <label for="lname">Feedback & Suggestion</label><br>
+        <input id ="feedack"type="text" id="feedback" name="feedback" ><br><br>
+        <input type="submit">
+
+      </form>  
 
 
 
-<% data.forEach((item)=>{%>
-  <%=item.name%>
-  <br>
-  <%=item.desc%>
-  <br>
-  <%=item.city%>
-  <br>
-  <%})  %>
-</body>
+     <div style="text-align: center;background-color: bisque;border-radius: 20px;">
+      <form action="/data" method="post">
+        <input type="radio" id="age1" name="data" value="0">
+        <label for="age1">Logout</label><br>
+        
+        <input type="submit">
+    
+      </form>
+     </div>
+
+
+
+
+
+
+     
+
+    
+
+
 </html>
